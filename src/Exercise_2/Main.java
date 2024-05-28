@@ -13,6 +13,7 @@ public class Main {
         List<Integer> reverseList = ReverseList(list);
         System.out.println("Lista iniziale: " + list);
         System.out.println("Lista iniziale + Lista reverse: " + reverseList);
+        printOddEvenIndex(reverseList, false);
     }
 
     public static TreeSet<Integer> NewList(int n) {
@@ -32,7 +33,17 @@ public class Main {
         combinedTree.addAll(list);
         combinedTree.addAll(reverseTree);
         return combinedTree;
+    }
 
-
+    public static void printOddEvenIndex(List<Integer> list, boolean bool) {
+        if (bool) {
+            for (int i = 0; i < list.size(); i++) {
+                if (i % 2 == 0) System.out.println("i" + ":" + list.get(i));
+            }
+        } else {
+            for (int i = 0; i < list.size(); i++) {
+                if (i % 2 != 0) System.out.println("index " + i + ":  " + list.get(i));
+            }
+        }
     }
 }
