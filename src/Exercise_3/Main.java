@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String name = "", telephoneNumber = "";
-        int choice = 0;
+        String name, telephoneNumber;
+        int choice;
 
         Map<String, String> contacts = new HashMap<>();
         while (true) {
@@ -47,7 +47,7 @@ public class Main {
     }
 
     public static void NewKeyValue(Map<String, String> contacts) {
-        String name = "", telephoneNumber = "";
+        String name, telephoneNumber;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the name: ");
         name = sc.nextLine();

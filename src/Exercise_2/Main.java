@@ -4,12 +4,12 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        TreeSet<Integer> list = new TreeSet<>();
         Scanner sc = new Scanner(System.in);
-        int n = 0;
+        int n;
+
         System.out.println("Quanti numeri vuoi generare?");
         n = Integer.parseInt(sc.nextLine());
-        list = NewList(n);
+        TreeSet<Integer> list = NewList(n);
         List<Integer> reverseList = ReverseList(list);
         System.out.println("Lista iniziale: " + list);
         System.out.println("Lista iniziale + Lista reverse: " + reverseList);
